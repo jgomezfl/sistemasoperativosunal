@@ -1,0 +1,53 @@
+SISTEMAS OPERATIVOS.
+
+Los sistemas operativos son el conjunto de programas de ejecución de software y hacen las veces de mediador
+entre el hardware y el usuario, busca lograr un rendimiento óptimo del computador. Los sistemas operativos nos
+guian en el proceso de instalación y uso de las aplicaciones que necesitamos o usamos en la maquina.
+El sistema operativo se desarrolla de tal manera que sea posible implementar funciones nuevas u optimizarse
+sin afectar ell funcionamiento del mismo.
+El sistema operativo administrar el hardware, reparte los recursos en las aplicaciones, tambien permite ó
+facilita  la comunicación entre dispositivos como el mouse, teclado, microfono, etc. Además de todo esto
+tambien permite las conexiones de red.
+Los sistemas operativos pueden dividerse en:
+	Multitareas: es una caracteristica de los nuevos SO quew permite el uso de aplicaciones al tiempo
+	trabajando en diferentes planos de relevancia, son demasiado comunes.
+	Monotarea: SO que solo puede hacer una tarea a la vez.
+	Monousuario: son sistemas que unicamente se administran por un usuario.
+	Multiusuario: estos sistemas cunmplen las tareas de dos o mas usuarios a la vez.
+La mayoria de los sistemas operativos poseen una interfaz grafica para que su funcionamiento ó funciones
+sean mas intuitivas.
+
+HISTORIA DE LOS SISTEMAS OPERATIVOS:
+
+1961. CTSS
+1962. EXEC II
+1964. EXEC 8
+1965. OS360
+1969. UNIX
+1970. Bach 11
+1971. OS8: inspirado en EXEC I y EXEC II
+1972. VM
+1973. AltoOS
+1976. CP-M
+1978. Aple Dos
+1981. QDOS
+1981. MSDOS del mismo creador de QDOS
+1982. SonOS, Ultrix
+1983. LisaOS, Novell Netware
+1984. MacOS
+1991. Linux
+1993. Plan 9
+1995. Windows 95 altamente inspirado en LisaOS.
+1996. WindowsNT
+2000. Windows 2000
+2001. Windows XP
+2004. Ubuntu Linux
+2005. MAC OSX 10.4 primera distribucion en cd y dvd
+2007. Windows Vista no muy diferente al Xindows XP
+2008. Android basado en Linux pensado unicamente para dispositivos moviles
+2009. Windows 7
+2009. IOs compatible con todos los dispositivos de apple, primer sistema para dispositivos moviles de apple
+2010. Windows Phone
+2012. Windows 8
+2013. Ubuntu TOUCH
+2015. Windows 10
