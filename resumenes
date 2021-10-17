@@ -1,0 +1,15 @@
+Microkernel - Estructuras de Sistemas Operativos
+
+Los objetivos de Sistema Operativo es que el usuario se sienta comodo trabajando y el hardward sea lo mas eficiente posible. Esta estructura es llamada asi debido a
+a su núcleo, el microkernel, muchas estructuras emplean un núcleo kernel, pero este tipo de estructura el nucle es diminuto y en el se encuentran sus componentes mas esenciales,
+por esto mismo el núcleo lleva a cabo las acciones mas esenciales como hilos o administración de memoria, es por esto que el núcleo solo puede soportar un numero limitado de
+mecanismos para acceder a los recursos del hardware. En esta estructura hay dos modos de ejecucion de procesos, el modo  usuario y kernel, en el modod usuario los servicios de
+sistema se encuentran cada uno en su propio espacio de memoria y se puede usar las aplicaciones de usuario protegidos uno del otro.
+En esta estructura las aplicaciones no interactuan directamente con los servicios de sistema, el núcleo los comunicará.
+Entre las ventajas de esta estructura es el agregar nuevas funcionalidades en el modo usuario, habrá mayor seguridad, pues una falla no afgectará a todo el sistema operativo,
+al ser el núcleo de kernel tan pequeño sera mas facil la corrección de fallos y habrá una única interfáz de solicitudes de procesos.
+En cuanto a las desventajas una de ellas será su bajo rendimiento y bajo desempeño, además de lo difícil de tratar las regiones criticas.
+Un buen ejemplo de estos sistemas operativos es  el minix 3, que soporta multiplrocesos y multiusuarios, destinado a sistemas embebidos como camaras o celulares, permite
+multiusuarios, multiprogramación y es tolerante a fallas, minix esta dividido en 4 niveles, el interior es el del kernel planifica tareas y procesos, la segunda capa contiene
+los drivers o controladores de dispositivos, la tercera capa se encarga de gestionatr la memoria, ficheros y servidor de red y la última contiene todos los procesos de usuario
+ya sea editores, compiladores, etc.
