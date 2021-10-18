@@ -23,4 +23,7 @@ multiusuarios, multiprogramación y es tolerante a fallas, minix esta dividido e
 los drivers o controladores de dispositivos, la tercera capa se encarga de gestionatr la memoria, ficheros y servidor de red y la última contiene todos los procesos de usuario
 ya sea editores, compiladores, etc.
 
-
+Sistemas Operativos clase 1.
+Debido a que al principio para trabajar en un computador era necesario trabajar en la maquina desnuda se hace necesario crear sistemas que faciliten la comunicación entre el usuario y la maquina, pues, solo aquellos con cierto conocimiento del tema eran capaces de manejar las maquinas de cómputo, de esta necesesidad nacen los primeros Sistemas de procesamiento por bloques o batch; estos sistemas automaticamente podían ejecitar procedimientos en la memoria y modificar la información en la memoria, debido a que estos sistemas fallaban comúnmente nacieron los monitores residentes que através de una terminal podía indicarse las tareas a ejecutar.
+Los sistemas operativas son softwares que administran la maquina y nacen para facilitar el manejo de las computadoras, en el video se hablan de las lineas con las por las que se formaron los sistemas operativos de hoy en día.
+Se inició notando que no bastaba con ejecutar un prohgrama a la vez, se estaba desperdiciando la capacidad de los procesadores, la solución fue cargar los programas en la memoria y distribuir el tiempo de todos de forma CONCURRENTE, de esta necesidad nace la primera gran ventaja de los sistemas operativos que es administrar los recursos. 
