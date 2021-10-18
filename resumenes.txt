@@ -42,4 +42,9 @@ sistemas fallaban comúnmente nacieron los monitores residentes que através de 
 Los sistemas operativas son softwares que administran la maquina y nacen para facilitar el manejo de las computadoras, en el video se hablan de las lineas con las por las que se
 formaron los sistemas operativos de hoy en día.
 Se inició notando que no bastaba con ejecutar un prohgrama a la vez, se estaba desperdiciando la capacidad de los procesadores, la solución fue cargar los programas en la
-memoria y distribuir el tiempo de todos de forma CONCURRENTE, de esta necesidad nace la primera gran ventaja de los sistemas operativos que es administrar los recursos. 
+memoria y distribuir el tiempo de todos de forma CONCURRENTE, de esta necesidad nace la primera gran ventaja de los sistemas operativos que es administrar los recursos; la 
+segunda gran funcion es abstraer el hardware automatizando y facilitando el manejo del mismo y por último los sistamas operativos nos ofercen una interfaz (que con el tiempo
+de ha hecho mas sencilla) para que el usuario maneje el sistema operativo.
+Actualmente se espera de los sistemas operativos que puedan ejecutar de forma concurrente varias tareas, identificar varios y usuarios y asignarles privilegios, administrar
+maquinas con multiples unidades de procesamiento ya sea asimétrico o simétrico.
+Podremos implementar la multitarea abstrayendo 
