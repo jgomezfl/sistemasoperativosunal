@@ -1,11 +1,22 @@
 Estructuras de los sistemas operativos
 
 El tipo de arquitectura de un sistema operativo estará determinada por el hardware que planea manejar.
-Sistema monolitico: serán los mas comunes debido a su sencilles, todos sus componentes de gestión y programas de sistema estarán escritos en un solo codigo. De entre las ventajas
-de este tipo de sistemas operativos esta la velocidad por su baja complejidad y la separación funcional entre los procesos de sistema y los de aplicación, la gran desventaja de este sistema operativo es que puede fallar si el hardware procenta un problema o si existe algún error se depurará el codigo del sistema.
-Sistemas por capas o niveles de privilegio: el obejtivo de estos sistemas es separar las acciones del codigo de procesos, sistema, nucleo y usuario, esto con el objetivo de proteger la gestión de procesos y memoria y entrada teniendo en cuenta la prioridad de la acción. Consta de 6 capas donde en la capa 0 se encontrarán las acciones de mayor prioridad y en la 5 de menor prioridad, en la capa 0 se encuentran la asignación del procesador y multiprogramas, en la capa 1 administración de memoria, en la 2 comunicador operador-proceso, en la capa 3 la administración de la entrada/salida, en la 4 se encuentran los programas de usuario y en la 5 el operado. Su mayor ventaja  es la depuración y verificación de procesos por capas; en cuanto a las desvetajas podremos notar el alto consumo de recursos.
-Sistemas de micronucleo: Es un tipo de sistema que combina las mejores caracteristicas de los sistemas monoliticos y por capas, haciendo mas pequeño el nucleo y tratando el resto de funciones como procesos de aplicación. Entre las ventajas encontramos la facilidad de crear y depurar controladores, ademas de que un fallo en cierta parte  del sistema no provocará la caída del sistema, por otro lado será un sistam con un código bastante complejo limitando algunas de las funciones.
-Sistemas cliente-servidor: ahora veremos como en cada sistema independiente estará el núcleo y como mínimo un proceso. Este sistema es bastante seguro debido a que el servidor puede controlar el acceso e integridad de los datos, es posible aumentar la canmtidad de clientes y servidores sin depender tanto uno del otro y al separar las funciones es mucho mas fácil reparar, actualizar o reemplazar un servidor sin afectar a los clientes, por otro lado lidiar con la congestión de tráfico, no recibir respuesta cuando el servidor esta caído y el necesitar software y hardware especifico serán los principales problemas de estos sistemas.
+Sistema monolitico: serán los mas comunes debido a su sencilles, todos sus componentes de gestión y programas de sistema estarán escritos en un solo codigo. De entre las
+ventajas
+de este tipo de sistemas operativos esta la velocidad por su baja complejidad y la separación funcional entre los procesos de sistema y los de aplicación, la gran desventaja de
+este sistema operativo es que puede fallar si el hardware procenta un problema o si existe algún error se depurará el codigo del sistema.
+Sistemas por capas o niveles de privilegio: el obejtivo de estos sistemas es separar las acciones del codigo de procesos, sistema, nucleo y usuario, esto con el objetivo de
+proteger la gestión de procesos y memoria y entrada teniendo en cuenta la prioridad de la acción. Consta de 6 capas donde en la capa 0 se encontrarán las acciones de mayor
+prioridad y en la 5 de menor prioridad, en la capa 0 se encuentran la asignación del procesador y multiprogramas, en la capa 1 administración de memoria, en la 2 comunicador
+operador-proceso, en la capa 3 la administración de la entrada/salida, en la 4 se encuentran los programas de usuario y en la 5 el operado. Su mayor ventaja  es la depuración y
+verificación de procesos por capas; en cuanto a las desvetajas podremos notar el alto consumo de recursos.
+Sistemas de micronucleo: Es un tipo de sistema que combina las mejores caracteristicas de los sistemas monoliticos y por capas, haciendo mas pequeño el nucleo y tratando el
+resto de funciones como procesos de aplicación. Entre las ventajas encontramos la facilidad de crear y depurar controladores, ademas de que un fallo en cierta parte  del sistema
+no provocará la caída del sistema, por otro lado será un sistam con un código bastante complejo limitando algunas de las funciones.
+Sistemas cliente-servidor: ahora veremos como en cada sistema independiente estará el núcleo y como mínimo un proceso. Este sistema es bastante seguro debido a que el servidor
+puede controlar el acceso e integridad de los datos, es posible aumentar la canmtidad de clientes y servidores sin depender tanto uno del otro y al separar las funciones es
+mucho mas fácil reparar, actualizar o reemplazar un servidor sin afectar a los clientes, por otro lado lidiar con la congestión de tráfico, no recibir respuesta cuando el
+servidor esta caído y el necesitar software y hardware especifico serán los principales problemas de estos sistemas.
 
 Microkernel - Estructuras de Sistemas Operativos
 
@@ -24,6 +35,11 @@ los drivers o controladores de dispositivos, la tercera capa se encarga de gesti
 ya sea editores, compiladores, etc.
 
 Sistemas Operativos clase 1.
-Debido a que al principio para trabajar en un computador era necesario trabajar en la maquina desnuda se hace necesario crear sistemas que faciliten la comunicación entre el usuario y la maquina, pues, solo aquellos con cierto conocimiento del tema eran capaces de manejar las maquinas de cómputo, de esta necesesidad nacen los primeros Sistemas de procesamiento por bloques o batch; estos sistemas automaticamente podían ejecitar procedimientos en la memoria y modificar la información en la memoria, debido a que estos sistemas fallaban comúnmente nacieron los monitores residentes que através de una terminal podía indicarse las tareas a ejecutar.
-Los sistemas operativas son softwares que administran la maquina y nacen para facilitar el manejo de las computadoras, en el video se hablan de las lineas con las por las que se formaron los sistemas operativos de hoy en día.
-Se inició notando que no bastaba con ejecutar un prohgrama a la vez, se estaba desperdiciando la capacidad de los procesadores, la solución fue cargar los programas en la memoria y distribuir el tiempo de todos de forma CONCURRENTE, de esta necesidad nace la primera gran ventaja de los sistemas operativos que es administrar los recursos. 
+Debido a que al principio para trabajar en un computador era necesario trabajar en la maquina desnuda se hace necesario crear sistemas que faciliten la comunicación entre el
+usuario y la maquina, pues, solo aquellos con cierto conocimiento del tema eran capaces de manejar las maquinas de cómputo, de esta necesesidad nacen los primeros Sistemas de
+procesamiento por bloques o batch; estos sistemas automaticamente podían ejecitar procedimientos en la memoria y modificar la información en la memoria, debido a que estos
+sistemas fallaban comúnmente nacieron los monitores residentes que através de una terminal podía indicarse las tareas a ejecutar.
+Los sistemas operativas son softwares que administran la maquina y nacen para facilitar el manejo de las computadoras, en el video se hablan de las lineas con las por las que se
+formaron los sistemas operativos de hoy en día.
+Se inició notando que no bastaba con ejecutar un prohgrama a la vez, se estaba desperdiciando la capacidad de los procesadores, la solución fue cargar los programas en la
+memoria y distribuir el tiempo de todos de forma CONCURRENTE, de esta necesidad nace la primera gran ventaja de los sistemas operativos que es administrar los recursos. 
