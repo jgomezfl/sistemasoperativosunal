@@ -35,6 +35,7 @@ los drivers o controladores de dispositivos, la tercera capa se encarga de gesti
 ya sea editores, compiladores, etc.
 
 Sistemas Operativos clase 1.
+
 Debido a que al principio para trabajar en un computador era necesario trabajar en la maquina desnuda se hace necesario crear sistemas que faciliten la comunicación entre el
 usuario y la maquina, pues, solo aquellos con cierto conocimiento del tema eran capaces de manejar las maquinas de cómputo, de esta necesesidad nacen los primeros Sistemas de
 procesamiento por bloques o batch; estos sistemas automaticamente podían ejecitar procedimientos en la memoria y modificar la información en la memoria, debido a que estos
@@ -47,4 +48,22 @@ segunda gran funcion es abstraer el hardware automatizando y facilitando el mane
 de ha hecho mas sencilla) para que el usuario maneje el sistema operativo.
 Actualmente se espera de los sistemas operativos que puedan ejecutar de forma concurrente varias tareas, identificar varios y usuarios y asignarles privilegios, administrar
 maquinas con multiples unidades de procesamiento ya sea asimétrico o simétrico.
-Podremos implementar la multitarea abstrayendo 
+Podremos implementar la multitarea abstrayendo la memoria, procesador  y periféricos. Para abstraer el procesador es necesario el concepto de procesos, es posible abstraer
+los procesos sin soporte del hardwarte hasta cierto punto, por ejemplo las tareas multicolaborativas; para cosas mas robustas si es necesario el sopotrte de hardware por ejemplo
+cuando se quiere distinguir entre codigo del sistema operativo y código de cualquier otro programa. Para inmplementar la multitarea usamos el sistema de anillos, anteriormente
+notamos que en el primer anillo se encuentran el primer programa a ejecutar que será el sistema operativo; para pasar de un anilllo a otro el SO realiza un salto especial y para
+devolverse de un anillo a otro debe producirse una interrupcion en el CPU y ejecutar el codigo de interrupción en el primer anillo. Para producir una interrupción podemos
+emplear el hardware, para que avise a la CPU alguna novedad, otra manera será que la CPU se interrumpa a sí misma y la última es que el programa que se esta corriendo se
+interrumpa a sí mismo.
+
+Sistemas Operativos clase 2.
+
+arquitecuras de SO: en los sistemas monolíticos absolutamente todos los programas se corren en el anillo 1, los procesos de usuario no podrán interactuar entre ellos o con la 
+maquina, lo harán únicamente con el Sistema Operativo. En el primer nivel se encontraran los drivers, llamadas al sistema  y las abstracciones y administradores, un ejemplo de
+este tipo de sistema es Linux. Estos sistemas tendrán una comunicación eficiente, pero ser procavido y ordenado será la regla al programar porque un error puede encadenar
+el fallo del sistema entero.
+La arquitectura microkernel busca sacar del primer anillo lo que no es indispensable, en el anillo queda la protección de memoria, hilos y mecanismos de comunicación entre
+procesos, el resto serán procesos de usuarios, ya no existirá el efecto mariposa (un fallo provocara el fallo general de sistema) y su diseño es mas flexible, pero no será
+nada eficiente, los primeros de estos sistemas funcionaban 10 veces mas lento, pero con mecanismos de comunicación entre procesos (IPC) mas eficientes el micrkernel será mas
+eficiente. Windos NT y GNU Hurd son ejemplos de esta arquitectura.
+A continuación algunas abstracciones, como la memoria secundaria, que se encuentra conectada de forma indirecta oir medio del bus de entrada y salida como por ejemplo el disco rigido.
