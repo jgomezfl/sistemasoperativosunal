@@ -1,4 +1,4 @@
-//Guardamos en una constante ela libreria express
+//Guardamos en una constante en la libreria express
 const express = require('express'); 
 const { Socket } = require('socket.io');
 //Guardamos en una constante llamada app el resultado de la función express
