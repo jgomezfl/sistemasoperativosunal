@@ -1,0 +1,19 @@
+<div style="width: 50%; margin: auto;margin-top: 170px;">
+    <div class="card p-5" style="background-color: rgb(96, 154, 202);">
+        <h1 style="text-align: center; color: aliceblue;">Welcome</h1>
+        <br>
+        <br>
+        <h6 style="color: aliceblue;">UserName</h6>
+        <input type="text" class="form-control" [(ngModel)]="Request.user">
+        <br>
+        <h6 style="color: aliceblue;">Sala</h6>
+        <select name="" id="" class="form-control" [(ngModel)]="Request.sala">
+            <option  *ngFor="let a of Salas">{{a}}</option>
+        </select>
+        <br>
+        <br>
+        <div>
+            <a class="btn btn-primary btn-block mt-3" style="margin: 12px;" (click)="Ingresar()">Ingresar</a>
+        </div>
+    </div>
+</div>
