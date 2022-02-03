@@ -1,0 +1,15 @@
+<label for="">{{intento.user}}</label>
+<br>
+<label for="">{{palabra}}</label>
+<br>
+<canvas id="canvasIdtra" #canvasRefTra></canvas>
+<div class="zone-btn">
+    <button (click)="clearZone()" type="button">Limpiar</button>
+</div>
+<p>{{sirve}}</p>
+<br>
+<div style="width: 30%; margin: auto;margin-top: 170px;">
+    <div class="card p-5">
+        <input type="text" class="form-control" (change)="sendOption()" [(ngModel)]="intento.text">
+    </div>
+</div>
